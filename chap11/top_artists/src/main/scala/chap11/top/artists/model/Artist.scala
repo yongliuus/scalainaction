@@ -1,7 +1,7 @@
 package chap11.top.artists.model
-import reflect.BeanProperty
+import scala.beans.BeanProperty
 import javax.persistence._
-import scala.annotation.target.field
+import scala.annotation.meta.field
 @Entity
 class Artist {
   @(Id @field) @(GeneratedValue @field) @BeanProperty

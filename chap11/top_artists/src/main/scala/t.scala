@@ -1,5 +1,5 @@
-import scala.annotation.target._
-import reflect.BeanProperty
-import javax.persistence._ 
+import scala.beans.BeanProperty
+import javax.persistence._
+import scala.annotation.meta.beanGetter
 
 class A {   @(Id @beanGetter) @BeanProperty val x = 0 }
